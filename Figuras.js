@@ -33,6 +33,20 @@ function calcularAreaTriangulo(){
 //Triangulo fin
 
 //Circulo 
+let resultadocirculo = document.getElementById("resultadocirculo");
+let radio = document.getElementById("radio");
 
+function calcularDiametroCirculo(){
+    let res = radio.value * 2;
+    return resultadocirculo.innerHTML = res + "m²" + " diametro"
+}
+function calcularPerimetroCirculo(){
+    let res = radio.value * Math.PI;
+    return resultadocirculo.innerHTML = res + " Perimetro";
+}
+function calcularAreaoCirculo(){
+    let res = Math.PI * radio.value**2;
+    return resultadocirculo.innerHTML = res + " Area";
+}
 //Circulo fin
 
