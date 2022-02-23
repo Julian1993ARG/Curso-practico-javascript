@@ -1,53 +1,38 @@
 // Cuadrado
 let resultadoCuadrado = document.getElementById("resultadoCuadrado")
-function perimetroCuadrado(lado) {
-    return lado * 4;
-}
-
-function areaCuadrado(lado){
-    return lado * lado
-}
-
-const user = document.getElementById("InputCuadrado")
+let user = document.getElementById("InputCuadrado");
 
 function calcularPerimetroCuadrado(){
-   return resultadoCuadrado.innerHTML = perimetroCuadrado(user.value) + "cm";
+   return resultadoCuadrado.innerHTML = user.value * 4 + "cm";
 }
 
 function calcularAreaCuadrado(){
-    return resultadoCuadrado.innerHTML = areaCuadrado(user.value) + "m²";
+    return resultadoCuadrado.innerHTML = (user.value * user.value) + "m²";
 }
-
 //Cuadrado fin
 
 //Triangulo
-
-
 
 let lado1 = document.getElementById("lado1");
 let lado2 = document.getElementById("lado2"); 
 let base = document.getElementById("base");
 let resultadotriangulo1 = document.getElementById("resultadotriangulo1");
-let lado1x = Number(lado1.value)
-let lado2x = Number(lado2.value)
-let basex = Number(base.value)
 
-function perimetrotriangulo(l1,l2,b){
-    return l1 + l2 + b;
-}
 function calcularPerimetroTriangulo(){
-    return resultadotriangulo1.innerHTML = perimetrotriangulo(lado1x,lado2x,basex) + "cm";
+    let res = Number(lado1.value) + Number(lado2.value) + Number(base.value);
+    return resultadotriangulo1.innerHTML = res + "cm";
 }
 
 let base2 = document.getElementById("base2"); 
 let altura = document.getElementById("altura"); 
 let resultadotriangulo2 = document.getElementById("resultadotriangulo2");
 
-function areatriangulo(b,a){
-    return (b*a)/2
-}
 function calcularAreaTriangulo(){
-    return resultadotriangulo2.innerHTML = areatriangulo(base2.value, altura.value) + "m²"
+    return resultadotriangulo2.innerHTML = (base2.value * altura.value)/2 + "m²"
 }
 //Triangulo fin
+
+//Circulo 
+
+//Circulo fin
 
