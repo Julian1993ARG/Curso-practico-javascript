@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras geometricas calculadora</title>
+</head>
+<body>
+    <header><h1>Figuras geometricas</h1>
+        <p>Este es el primer taller del curso de javascript de Platzi</p>
+    </header>
+    <section class="Cuadrado">
+        <h2>Calcula el área y perímetro de un cuadrado</h2>
+        <form action="">
+            <label for="InputCuadrado">Ingresa cuanto mide cada lado de tu cadrado</label>
+            <input type="number" id="InputCuadrado">
+            <button type="button" onclick="calcularPerimetroCuadrado()">
+                Calcular Perímetro
+            </button>
+            <button type="button" onclick="calcularAreaCuadrado()">
+                Calcular Area
+            </button>
+            <p id="resultadoCuadrado"></p>
+        </form>
+    </section>
+    <script src="Figuras.js"></script>
+</body>
+</html>
