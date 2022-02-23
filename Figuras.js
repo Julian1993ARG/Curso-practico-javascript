@@ -30,6 +30,20 @@ let resultadotriangulo2 = document.getElementById("resultadotriangulo2");
 function calcularAreaTriangulo(){
     return resultadotriangulo2.innerHTML = (base2.value * altura.value)/2 + "m²"
 }
+
+let resultadotriangulo3 = document.getElementById("resultadotriangulo3");
+
+function calcularAlturaTrianguloIsoseles(){
+    if (lado1.value != lado2.value){
+        alert("Los lados deben tener la misma medida para que el triangulo sea isoseles")
+    }
+    else{
+        let res = lado1.value**2 - (lado2.value**2/4);
+        res =Math.sqrt(res)
+        resultadotriangulo3.innerHTML = res + " Altura"
+    }
+}
+
 //Triangulo fin
 
 //Circulo 
